@@ -1,0 +1,15 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      DEMO_SEED: "true"
+      # mock (por defecto, determinista) | llm (usa Claude si hay ANTHROPIC_API_KEY)
+      AGENT_MODE: ${AGENT_MODE:-mock}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+
+  tests:
+    build: .
+    command: pytest -v
+    profiles: ["test"]
