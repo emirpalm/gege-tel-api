@@ -52,4 +52,14 @@
 
 ## 4. Tiempo real
 
-**≈1 hora** (26/10/2026, 11:45 → 12:45): ~10 min de diseño, ~15 min de código y pruebas, y el resto en revisión, demo, repositorio y este documento.
+**≈1 hora en total** (26/10/2026, 11:45 → 12:45). Desglose estimado por fase:
+
+| Fase | Tiempo estimado | Qué incluyó |
+|---|---|---|
+| Análisis | ~10 min | Lectura del enunciado, reglas ambiguas y supuestos: estado inicial `pending`, mes en hora de CDMX, empate de timestamps, línea desconocida en el webhook, el agente no entrega códigos. |
+| Arquitectura y modelo de datos | ~10 min | Capas (rutas → dependencias → servicios → modelos), tablas y qué reglas van como constraints de BD; identidad por encabezados; diseño del agente con lista cerrada y guardrail. |
+| Implementación | ~15 min | Modelos, seed, webhook, canje, agente (selector por palabras clave + Claude opcional) y rutas, con Claude Code. |
+| Pruebas | ~10 min | 30 pruebas automáticas; casos negativos del agente (aquí se detectó el error de la IA) y corrección. |
+| Docker y demo | ~5 min | `Dockerfile`, `docker-compose.yml` y `demo.sh` ejecutado contra el contenedor. |
+| Revisión, repositorio y documento | ~10 min | Revisión del código, README, este documento y publicación en GitHub. |
+| **Total** | **≈60 min** | |
