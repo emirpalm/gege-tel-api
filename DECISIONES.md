@@ -1,6 +1,6 @@
 # Gege Tel API — Decisiones técnicas
 
-**Autor:** Emir · **Repositorio:** _<liga>_ · **Tiempo real:** _<completar>_
+**Autor:** Emir · **Repositorio:** https://github.com/emirpalm/gege-tel-api · **Tiempo real:** _<completar>_
 
 ## 1. Las tres decisiones más importantes
 
