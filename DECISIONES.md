@@ -1,6 +1,6 @@
 # Gege Tel API — Decisiones técnicas
 
-**Autor:** Emir · **Repositorio:** https://github.com/emirpalm/gege-tel-api · **Tiempo real:** _<completar>_
+**Autor:** Emir · **Repositorio:** https://github.com/emirpalm/gege-tel-api · **Tiempo real:** ≈1 h
 
 ## 1. Las tres decisiones más importantes
 
@@ -52,4 +52,4 @@
 
 ## 4. Tiempo real
 
-_<hora de inicio → hora de fin, total>_
+**≈1 hora** (26/10/2026, 11:45 → 12:45): ~10 min de diseño, ~15 min de código y pruebas, y el resto en revisión, demo, repositorio y este documento.
